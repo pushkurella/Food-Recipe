@@ -1,0 +1,3 @@
+-- SQLite
+-- select * from meals;
+-- delete from meals where id=8;
