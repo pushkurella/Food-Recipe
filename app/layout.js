@@ -1,5 +1,6 @@
 import MainHeader from "@/app/components/main-header/main-header";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "NextLevel Food",
@@ -12,6 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <MainHeader />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
