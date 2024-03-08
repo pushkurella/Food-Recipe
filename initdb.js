@@ -1,7 +1,7 @@
 const sql = require("better-sqlite3");
 const db = sql("meals.db");
 
-const dummyMeals = [
+export const dummyMeals = [
   {
     title: "Juicy Cheese Burger",
     slug: "juicy-cheese-burger",
@@ -198,4 +198,4 @@ async function initData() {
   }
 }
 
-initData();
+// initData(); commenting it when deploying to server
