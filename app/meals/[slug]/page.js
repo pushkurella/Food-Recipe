@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
 }
 const MealsSlug = ({ params }) => {
   const meal = getMeal(params.slug);
-
+  console.log("meal", meal);
   meal.instructions = meal.instructions.replace(/\n/g, "<br />");
   return (
     <>
