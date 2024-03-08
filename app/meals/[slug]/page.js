@@ -1,6 +1,6 @@
 import Image from "next/image";
 import classes from "./page.module.css";
-import { getMeal } from "@/lib/meals";
+import { getMeal } from "../../../lib/meals";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata({ params }) {
@@ -13,6 +13,10 @@ export async function generateMetadata({ params }) {
     description: meal.summary,
   };
 }
+// export function generateStaticParams() {
+//   return [{ slug: "juicy-cheese-burger" }];
+// }
+
 const MealsSlug = ({ params }) => {
   const meal = getMeal(params.slug);
   console.log("meal", meal);
